@@ -1,0 +1,520 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 0.6px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav.putih {
+    background-color: #fff;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+    outline: invert;
+    outline-style: auto
+    outset;
+    outline-color: #c86b85;
+}
+
+/* ? BUTTON */
+nav ul li a {
+    color: #000000;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    outline-style: solid;
+    outline-width: thin;
+
+}
+/*! ========================================================================================= */
+/* ? HEADER */
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 10px;
+    display:flexbox;
+    text-align:justify;
+}
+
+#home,
+.home .layar-dalam .konten-isi h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    color:#000000;
+}
+
+
+header .layar-dalam {
+    text-align: center;
+    /* display: flex; */
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*! ================================================================= */
+/* ? CARDS PICTURE*/
+
+section#card {
+    /* background-color: #e0c172; */
+    display: flex;
+    align-items:start;
+    justify-content:center;
+}
+
+.cards {
+    /* background-color: #c86b85; */
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content:center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    margin-bottom: 25px;
+    width: 65%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.card-img {
+    width: 80%;
+    height: 450px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #c8c26b; */
+}
+
+.card-img-hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 450px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    top: 0;
+    transition: 0.2s all ease-out;
+}
+
+.card-info {
+    z-index: 2;
+    /* background: #ece9e6;
+    background: linear-gradient(to right, #ffffff, #ece9e6); */
+    padding: 16px 24px 24px 24px;
+}
+
+
+.card-category {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 1rem;
+    font-size: 15px;
+    font-style: italic;
+    color:#b1b1b1;
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.card-by {
+    font-size: 14px;
+    color: #b1b1b1;
+    font-style: italic;
+}
+
+section .card-by::after {
+    content: "";
+    border-bottom: 5px solid #c9c9c9;
+    width: 150px;
+    display: block;
+    margin: 30px auto;
+    padding-bottom: 5px;
+}
+
+.text-bawah {
+    z-index: 4;
+    padding: 5px 24px 24px 24px;
+}
+
+
+.card-bawah{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    padding-right: 24px;
+}
+
+.judul{
+    padding-top: 10px;
+        padding-right: 24px;
+        margin-top: 10px;
+        size: 10px;
+}
+
+.list1{
+    padding-left: 10px;
+    padding-right: 24px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+.list2 {
+    padding-left: 10px;
+        padding-right: 24px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+.list3 {
+    padding-left: 10px;
+    padding-right: 24px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+/*! ========================================================== */
+        /* ? CARD FORM CONTACT */
+.card2 {
+    display: flex;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-direction: column;
+    background: #ece9e6;
+}
+
+.body-right-content h5 {
+    position: relative;
+    text-align: start;
+    display: flex;
+    padding-top: 10px;
+    justify-content: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-info2{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.body-right-content p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: start;
+    padding-bottom: 10px;
+    color:#b1b1b1;
+}
+
+/* untuk form */
+.body-right-content .ContactUs {
+    display:grid;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 11pt;
+}
+
+/*membuat lebar form penuh*/
+.form_contact {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+.tombol_send {
+    background: #333333;
+    color: white;
+    font-size: 12pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.body-right-content button {
+    /* display */
+    /* box-sizing: border-box; */
+    width: 100%;
+    font-size: 11pt;
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+        text-decoration: none;
+        outline-style: solid;
+}
+
+/*! ================================================================= */
+/* ? HEADER */
+header .home h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+
+
+/*! ================================================================================= */
+/*? MAIN */
+#package-tempat,
+#package
+main {
+    padding: 50px 50px 50px 50px;
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 10px;
+    text-align: start;
+}
+
+main .layar-dalam {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        background-color: #cccccc;
+}
+
+main .tempat-layar-dalam {
+        display: flex;
+        text-align: start;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+main .tempat-layar-dalam div {
+    width: 20%;
+}
+
+main .tempat-layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main .tempat-layar-dalam2 {
+    margin-top: 60px;
+    display: flex;
+    text-align:start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+}
+
+main .tempat-layar-dalam  p{
+    color: #b1b1b1;
+}
+
+main .tempat-layar-dalam2 p {
+    color: #b1b1b1;
+}
+
+main .tempat-layar-dalam2 div {
+    width: 20%;
+}
+
+main .tempat-layar-dalam2 h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*! ======================================================================== */
+/*? FOOTER */
+
+#call-us,
+footer {
+    border-top-style: 0.6px solid #b1b1b1;
+    padding: 50px 50px 50px 50px;
+    color: #000000;
+    text-align: center;
+}
+
+footer .h3{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+}
+
+footer .h8{
+    display: flex;
+    text-align: center;
+    width: 20%;
+    color: #b1b1b1;
+}
+
+.tombol-call{
+    background-color: #000000;
+        height: 40px;
+        line-height: 42px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0px 30px 0px 30px;
+        font-size: 15px;
+        border-radius: 3px;
+}
+
+footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #21d421;
+    text-align: center;
+}
+
+
+/*!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ? UNTUK ICON MENU  */
+
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #000000;
+}
+
+/*! ================================================= */
+/* ? Responsive */
+@media screen and (max-width: 991.98px) {
+    .layar-dalam{
+        width: 90%;
+    }
+
+    nav .menu ul{
+        display: none;
+    }
+
+    .tombol-menu{
+        display: flex;
+    }
+}
+
+
+
+

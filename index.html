@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="width=device-width, initial-scale=1.0"/>
+        <title>Travel</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="assets/logo.png" class="putih" /></a>
+            </div>
+
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#package">Our Package</a></li>
+                    <li><a href="#call-us">Call Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header>
+            <section id="home" "> <!--aboutus -->
+                <div class="layar-dalam"> <!--layar-dalam -->
+                    <h3>Your Trusted Travel Agent's</h3>
+                    <div class="konten-isi"> <!--konten-isi -->
+                        <p>
+                            Your happiness is our happiness
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="card" class="cards">
+            <article class="card" >
+                    <div class="body-left-content">
+                        <div class="area">
+                            <div class="card-img"></div>
+                                <a href="#">
+                                    <div class="card-img-hover" style="background-image: url(assets/gambar3.jpg);">
+                                    </div>
+                                </a>
+                            <div class="card-info">
+                                <span class="card-category">"Liburan jadi menyenangkan bersama Travel Agentku."</span>
+                                <h3 class="card-title">Florence Hughes</h3>
+                                <span class="card-by">
+                                    Ibu Rumah Tangga, 28
+                                </span>
+                            </div>
+                            <div class="text-bawah">
+                                <h3 class="card-bawah">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and
+                                explain the benefits of your service or product</h3>
+                                <ul class="judul" style="list-style-image: url(assets/bintang.png)">
+                                    <li class="list1">Your first feature, written in the form of a benefit statement.</li>
+                                    <li class="list2">Your second feature, written in the form of a benefit statement.</li>
+                                    <li class="list3">Your third feature written, in the form of a benefit statement</li>
+                                </ul>
+                            </div>
+                    </div>
+            </article>
+            <!-- </section> -->
+
+            <!-- <section id="card" class="cards2"> -->
+            <article class="card2">
+                <div class="body-right-content">
+                        <div class="area2">
+                            <div class="card-info2">
+                                <H5>Contact Us</H5>
+                                <p>
+                                Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
+                                </p>
+                                <div class="ContactUs">
+                                    <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
+                                        <label style="display: flex;">Your Name :</label>
+                                        <input style="display: flex;" type="text" name="name" class="form_contact"
+                                            placeholder="First and last name">
+                                        <label style="display: flex;">Email Address :</label>
+                                        <input style="display: flex;" type="text" name="email" class="form_contact" placeholder="example@email.com">
+
+                                        <label style="display: flex;">What are you interested in?</label>
+                                        <select style="display: flex;" name="interested" class="form_contact">
+                                            <option value="0">--Choose Option--</option>
+                                            <option value="1">Beach</option>
+                                            <option value="2" selected>Mountain</option>
+                                            <option value="3" selected>Camping</option>
+                                        </select>
+                                        <button type="submit" class="tombol_send" value="send" onclick="validateForm()">Send</button>
+                                        <br />
+                                        <br />
+                                    </form>
+                                </div>
+                                <script>
+                                    function validateForm() {
+                                        if (document.forms["formPendaftaran"]["name"].value == "") {
+                                            alert("Nama Tidak Boleh Kosong");
+                                            document.forms["formPendaftaran"]["name"].focus();
+                                            return false;
+                                        }
+                                        if (document.forms["formPendaftaran"]["email"].value == "") {
+                                            alert("Email Tidak Boleh Kosong");
+                                            document.forms["formPendaftaran"]["email"].focus();
+                                            return false;
+                                        }
+                                        if (document.forms["formPendaftaran"]["interested"].selectedIndex < 1) {
+                                            alert("Choose your interested?");
+                                            document.forms["formPendaftaran"]["interested"].focus();
+                                            return false;
+                                        }
+                                        else{
+                                        alert('Success! Data terkirim!');
+                                        }
+                                    }
+                                </script>
+                            </div>
+            </article>
+        </section>
+    </header>
+
+    <!-- MAIN PACKAGE -->
+    <main>
+        <section class="abuabu" id="package">
+            <div class="layar-dalam">
+                <h3>Our Package</h3>
+            </div>
+        </section>
+        <section id="package-tempat">
+            <div class="tempat-layar-dalam">
+                <div>
+                <h5>Bali</h5>
+                <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+            </div>
+                <div>
+                <h5>Japan</h5>
+                <p>
+                Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+            </div>
+                <div>
+                    <h5>Singapore</h5>
+                        <p>
+                        This description supports and extends the bullet point above.
+                        </p>
+                </div>
+            </div>
+            <div class="tempat-layar-dalam2">
+                <div>
+                    <h5>Bandung</h5>
+                    <p>
+                    This description supports and extends the bullet point above.
+                    </p>
+                </div>
+                <div>
+                    <h5>Surabaya</h5>
+                    <p>
+                    This description supports and extends the bullet point above.
+                </p>
+                </div>
+                <div>
+                    <h5>Third Feature</h5>
+                    <p>
+                    This description supports and extends the bullet point above.
+                </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="putih" id="call-us">
+            <h3>Your Closing Argument Headline</h3>
+            <div class="footer-konten-isi"> <!--konten-isi -->
+                <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed
+                justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+            </div>
+            <p>
+                <a href="" class="tombol-call">CALL TO ACTION</a>
+            </p>
+        </section>
+        <div class="footer-layar-dalam">
+            <div class="terms">Terms of Service   Privacy Policy</div>
+            <div class="copyright">&copy; 2023 Moqups</div>
+        </div>
+    </footer>
+</body>
+
+</html>
